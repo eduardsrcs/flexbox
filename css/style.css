@@ -1,0 +1,27 @@
+nav{
+  display: flex;
+  align-items: flex-end;
+}
+
+#section1{
+  display: flex;
+  flex-direction: column;
+}
+
+#section1 div:first-child{
+  flex: 0 0 20%;
+}
+
+#section1 div:last-child{
+  flex: 0 0 30%;
+}
+
+#section1 div:nth-child(2){
+  background-color: cyan;
+}
+
+@media only screen and (min-width: 700px) {
+  #section1{
+    flex-direction: row;
+  }
+}
